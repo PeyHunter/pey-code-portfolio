@@ -2,7 +2,7 @@ import ReactWeatherApp from "./projects/React-weather-app";
 import LiveClock from "./projects/Live-clock";
 import DictionaryApp from "./projects/Dictionary";
 import Soundwave from "./projects/Soundwave";
-import N8n from "./projects/n8n"; // Ændret til stort N
+import N8n from "./projects/N8n";
 
 function Projects() {
   return (
