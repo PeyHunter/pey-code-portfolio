@@ -1,9 +1,52 @@
+import ReactWeatherApp from "./projects/React-weather-app";
+import LiveClock from "./projects/Live-clock";
+import DictionaryApp from "./projects/Dictionary";
+import Soundwave from "./projects/Soundwave";
+import N8n from "./projects/n8n"; // Ændret til stort N
+
 function Projects() {
   return (
-    <div>
-      <h1>Mine Projekter</h1>
-      <p>Her er en liste over hvad jeg har lavet.</p>
-    </div>
+    <div className="min-h-screen bg-black text-white p-8 pt-40 font-bricolage">
+      <h1 className="text-[10vw] font-black leading-none mb-20 tracking-tighter">
+        Projects
+      </h1>
+
+      <div className="flex flex-col border-t border-white/20">
+        {/* Nu med stort N, så React genkender den */}
+        <N8n
+          displayTitle="n8n"
+          title="n8n"
+          techStack={["Docker", "n8n", "GitHub"]}
+        />
+
+        <Soundwave
+          displayTitle="Soundwave Arena"
+          title="Soundwave-Arena"
+          techStack={["Java", "JavaScript", "MySQL"]}
+        />
+
+        <ReactWeatherApp
+          displayTitle="Weather App"
+          title="Weather-App"
+          liveUrl="https://pey-react-weather-app.netlify.app"
+          techStack={["React", "API"]}
+        />
+
+        <LiveClock
+          displayTitle="World Clock"
+          title="Live-Clock"
+          liveUrl="https://pey-world-clock.netlify.app"
+          techStack={["JS", "MomentJS"]}
+        />
+
+        <DictionaryApp
+          displayTitle="Dictionary"
+          title="Dictionary-App"
+          liveUrl="https://pey-dictionary-app.netlify.app"
+          techStack={["React", "Dictionary-API", "Tailwind"]}
+        />
+      </div> 
+    </div> 
   );
 }
 
