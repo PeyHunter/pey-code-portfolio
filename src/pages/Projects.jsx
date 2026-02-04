@@ -3,6 +3,7 @@ import LiveClock from "./projects/Live-clock";
 import DictionaryApp from "./projects/Dictionary";
 import Soundwave from "./projects/Soundwave";
 import N8n from "./projects/N8n";
+import Notehelper from "./projects/Notehelper";
 
 function Projects() {
   return (
@@ -12,7 +13,13 @@ function Projects() {
       </h1>
 
       <div className="flex flex-col border-t border-white/20">
-        {/* Nu med stort N, så React genkender den */}
+       
+        <Notehelper
+          displayTitle="Notehelper"
+          title="notehelper"
+          techStack={["Docker", "AI", "GitHub Actions"]}
+        />
+
         <N8n
           displayTitle="n8n"
           title="n8n"
