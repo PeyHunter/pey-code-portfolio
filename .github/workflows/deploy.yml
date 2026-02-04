@@ -34,4 +34,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
-          script: sudo systemctl restart nginx
+          script: |
+            sudo chown -R peyton:peyton /var/www/html
+            sudo systemctl restart nginx
