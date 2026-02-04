@@ -5,6 +5,7 @@
 @theme {
   --font-bricolage: "Bricolage Grotesque", sans-serif;
   --font-saira: "Saira Extra Condensed", sans-serif;
+  --font-reddit: "Reddit Mono", monospace;
   --font-jakarta: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -17,6 +18,5 @@ body,
   height: 100vh;
   background-color: black;
   color: white;
-  overflow: hidden;
   font-family: var(--font-jakarta);
 }
