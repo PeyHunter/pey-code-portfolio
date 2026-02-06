@@ -14,6 +14,13 @@ function Projects() {
 
       <div className="flex flex-col border-t border-white/20">
        
+        <Soundwave
+          displayTitle="Soundwave Arena"
+          title="Soundwave-Arena"
+          techStack={["Java", "JavaScript", "MySQL"]}
+        />
+
+
         <Notehelper
           displayTitle="Notehelper"
           title="notehelper"
@@ -24,12 +31,6 @@ function Projects() {
           displayTitle="n8n"
           title="n8n"
           techStack={["Docker", "n8n", "GitHub"]}
-        />
-
-        <Soundwave
-          displayTitle="Soundwave Arena"
-          title="Soundwave-Arena"
-          techStack={["Java", "JavaScript", "MySQL"]}
         />
 
         <ReactWeatherApp

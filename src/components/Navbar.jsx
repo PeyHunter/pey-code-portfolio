@@ -6,14 +6,14 @@ function Navbar() {
       
      <div className="font-bricolage text-[25px] leading-tight font-black flex flex-col items-start">
   <div className="flex gap-[0.3em] flex-wrap">
-    <span className="hover:opacity-40 transition-opacity duration-300 cursor-default">Java,</span>
-    <span className="hover:opacity-40 transition-opacity duration-300 cursor-default">Python,</span>
+    <span >Java,</span>
+    <span >Python,</span>
   </div>
 
   <div className="flex gap-[0.3em] flex-wrap">
-    <span className="hover:opacity-40 transition-opacity duration-300 cursor-default">JavaScript,</span>
-    <span className="hover:opacity-40 transition-opacity duration-300 cursor-default">Tailwind,</span>
-    <span className="hover:opacity-40 transition-opacity duration-300 cursor-default">React</span>
+    <span >JavaScript,</span>
+    <span >Tailwind,</span>
+    <span >React</span>
   </div>
 </div>
 
