@@ -14,7 +14,7 @@ export default function Notehelper() {
           </div>
           <div>
             <span className="text-blue-400">String[]</span> tech = {"{"}
-            "open ai", "", "Java", "API Integration"
+            "Open ai", "", "Java", "API Integration"
             {"}"};
           </div>
           <div>
