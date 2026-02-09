@@ -19,7 +19,7 @@ export default function Soundwave({ title, techStack, displayTitle }) {
           <div>
             <span className="text-blue-400">URL</span> frontend ={" "}
             <a
-              href="https://github.com/Krymmel-Kaemperne/SpinchyFrontend"
+              href="https://github.com/Krymmel-Kaemperne/soundwave-frontend"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange-300 hover:text-blue-400 underline decoration-white/10"

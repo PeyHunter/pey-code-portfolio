@@ -68,13 +68,14 @@ export default function Notehelper() {
           <div className="mt-8 md:max-w-lg">
             <p className="text-white/60 font-reddit leading-relaxed">
               This is my AI-driven project designed to automate the process of
-              learning. I built this tool to analyze complex information and
+              learning. I built this tool to analyze text and
               automatically generate structured notes, making it easier to
-              organize and retain key insights from my studies.
+              study.
             </p>
             <p className="mt-4 text-blue-400/80 font-reddit text-sm italic leading-relaxed">
               Please note: The API can be a bit slow to respond, but the real
-              value shines through when you use the "Explain more" feature.
+              value shines through when you use the "Explain more" feature. 
+              This project is deployed on my VM using github actions.
             </p>
           </div>
         </div>
