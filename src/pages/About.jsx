@@ -9,7 +9,7 @@ function About() {
             About
           </h1>
 
-          <p className="font-reddit text-base md:text-xl leading-relaxed mb-10 opacity-70 max-w-1/2">
+          <p className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2">
             Hi, I'm Peyton, a full-stack student at KEA currently looking for an internship. 
             I have a solid foundation in Java, Spring Boot, and MySQL, and I enjoy using Tailwind and Bootstrap 
             to keep my frontends clean. This semester, I'm expanding into Python and AI automation to 
@@ -18,35 +18,48 @@ function About() {
           </p>
 
           <div className="font-reddit leading-relaxed p-8 bg-white/5 rounded-2xl border border-white/10 mb-12 max-w-xl">
-            <div className="text-base md:text-xl">
-              <span className="text-purple-400">ContactInfo</span> contact ={" "}
-              <span className="text-blue-400">new</span>{" "}
-              <span className="text-purple-400">ContactInfo</span>();
+            <div className="text-base md:text-base">
+              <span className="text-blue-400">record</span>{" "}
+              <span className="text-purple-400">ContactInfo</span>(
+              <span className="text-purple-400">Email</span> email,{" "}
+              <span className="text-purple-400">Link</span> link,{" "}
+              <span className="text-purple-400">Phone</span> phone) {}
             </div>
 
-            <div className="ml-6 border-l border-white/10 pl-6 my-4 text-base md:text-xl space-y-2">
+            <div className="text-base md:text-base mt-4">
+              <span className="text-blue-400">var</span> contact ={" "}
+              <span className="text-blue-400">new</span>{" "}
+              <span className="text-purple-400">ContactInfo</span>(
+            </div>
+
+            <div className="ml-6 border-l border-white/10 pl-6 my-2 text-base md:text-base space-y-2">
               <div>
-                contact.<span className="text-yellow-200">email</span>(
+                <span className="text-blue-400">new</span>{" "}
+                <span className="text-purple-400">Email</span>(
                 <a href="mailto:Nando.goat@gmail.com" className="text-orange-300 hover:underline transition-all">
-                  "Nando.goat@gmail.com"
+                  "nando.goat@gmail.com"
                 </a>
-                );
+                ),
               </div>
               <div>
-                contact.<span className="text-yellow-200">github</span>(
+                <span className="text-blue-400">new</span>{" "}
+                <span className="text-purple-400">Link</span>(
                 <a href="https://github.com/peyhunter" target="_blank" className="text-orange-300 hover:underline transition-all">
-                  "github/peyhunter"
+                  "https://github.com/peyhunter"
                 </a>
-                );
+                ),
               </div>
               <div>
-                contact.<span className="text-yellow-200">phone</span>(
+                <span className="text-blue-400">new</span>{" "}
+                <span className="text-purple-400">Phone</span>(
                 <a href="tel:+4512345678" className="text-orange-300 hover:underline transition-all">
                   "+45 12 34 56 78"
                 </a>
-                );
+                )
               </div>
             </div>
+            
+            <div className="text-base md:text-base">);</div>
           </div>
         </div>
 

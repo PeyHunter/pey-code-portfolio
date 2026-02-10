@@ -8,13 +8,17 @@ function Navbar() {
   <div className="flex gap-[0.3em] flex-wrap">
     <span >Java,</span>
     <span >Python,</span>
+    <span >MySQL,</span>
+    <span >Docker</span>
   </div>
 
   <div className="flex gap-[0.3em] flex-wrap">
+    <span >CI/CD,</span>
     <span >JavaScript,</span>
     <span >Tailwind,</span>
     <span >React</span>
   </div>
+
 </div>
 
 
