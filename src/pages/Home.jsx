@@ -6,7 +6,7 @@ function Home() {
       
       {/* Top sektion med kontakt info */}
       <div className="flex justify-between w-full text-[17px] tracking-widest mb-auto pt-32 px-2 uppercase">
-        <span className="opacity-80">Currently looking for a internship</span>
+        <span className="opacity-80">Currently open to opportunities</span>
         
         <div className="flex flex-col items-end gap-2 text-right">
           <a 
