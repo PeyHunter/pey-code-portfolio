@@ -66,7 +66,9 @@ jobs:
           ssh-key: ${{ secrets.GITOPS_DEPLOY_KEY }}
 
       - name: Point the portfolio at the new image
-        run: sed -i -E "s|newTag: .*|newTag: \"${TAG}\"|" portfolio/kustomization.yaml
+        run: |
+          sed -i -E "s|newTag: .*|newTag: \"${TAG}\"|" portfolio/kustomization.yaml
+          grep newTag portfolio/kustomization.yaml
 
       - name: Commit and push
         run: |
