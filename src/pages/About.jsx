@@ -10,12 +10,21 @@ function About() {
           </h1>
 
           <p className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2">
-            Hi, I'm Peyton, a full-stack student at KEA currently looking for an internship. 
-            I have a solid foundation in Java, Spring Boot, and MySQL, and I enjoy using Tailwind and Bootstrap 
-            to keep my frontends clean. This semester, I'm expanding into Python and AI automation to 
-            build on my experience with CI/CD and smarter workflows. I’m ready to join a professional 
+            Hi, I'm Peyton, a full-stack developer studying at KEA, and I'm currently looking for a job.
+            I have a solid foundation in Java, Spring Boot, and MySQL, and I enjoy using Tailwind and Bootstrap
+            to keep my frontends clean. As an AI intern at Droids Agency I work with agentic Playwright,
+            AI workflows, and Kubernetes, and I run my own k3s cluster with CI/CD. I’m ready to join a professional
             dev team where I can contribute to real projects and keep leveling up my coding skills.
           </p>
+
+          <a
+            href="https://cv.peytonhunter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block font-reddit text-base mb-12 px-6 py-3 rounded-full border border-white hover:bg-white hover:text-black transition-all"
+          >
+            View my CV →
+          </a>
 
           <div className="font-reddit leading-relaxed p-8 bg-white/5 rounded-2xl border border-white/10 mb-12 max-w-xl">
             <div className="text-base md:text-base">
@@ -23,6 +32,7 @@ function About() {
               <span className="text-purple-400">ContactInfo</span>(
               <span className="text-purple-400">Email</span> email,{" "}
               <span className="text-purple-400">Link</span> link,{" "}
+              <span className="text-purple-400">Link</span> cv,{" "}
               <span className="text-purple-400">Phone</span> phone) {}
             </div>
 
@@ -46,6 +56,14 @@ function About() {
                 <span className="text-purple-400">Link</span>(
                 <a href="https://github.com/peyhunter" target="_blank" className="text-orange-300 hover:underline transition-all">
                   "https://github.com/peyhunter"
+                </a>
+                ),
+              </div>
+              <div>
+                <span className="text-blue-400">new</span>{" "}
+                <span className="text-purple-400">Link</span>(
+                <a href="https://cv.peytonhunter.com" target="_blank" className="text-orange-300 hover:underline transition-all">
+                  "https://cv.peytonhunter.com"
                 </a>
                 ),
               </div>
