@@ -4,6 +4,7 @@ import DictionaryApp from "./projects/Dictionary";
 import Soundwave from "./projects/Soundwave";
 import N8n from "./projects/N8n";
 import Notehelper from "./projects/Notehelper";
+import K3sCluster from "./projects/K3sCluster";
 
 function Projects() {
   return (
@@ -13,7 +14,9 @@ function Projects() {
       </h1>
 
       <div className="flex flex-col border-t border-white/20">
-       
+
+        <K3sCluster />
+
         <Soundwave
           displayTitle="Soundwave Arena"
           title="Soundwave-Arena"
