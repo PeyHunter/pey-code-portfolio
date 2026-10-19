@@ -47,7 +47,7 @@ function Home() {
                 <TypeAnimation
                   sequence={[
                     5000, // Pause inden næste linje
-                    '"Java", "Python", "React", "MySQL", "JavaScript"',
+                    '"Kubernetes", "Agentic Playwright", "Argo CD", "Java", "Python", "React", "MySQL", "JavaScript"',
                     1000
                   ]}
                   speed={1} // Ekstremt langsomt

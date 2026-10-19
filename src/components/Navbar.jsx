@@ -6,9 +6,9 @@ function Navbar() {
       
      <div className="font-bricolage text-[25px] leading-tight font-black flex flex-col items-start">
   <div className="flex gap-[0.3em] flex-wrap">
-    <span >Java,</span>
-    <span >Python,</span>
-    <span >JavaScript,</span>
+    <span >GitOps,</span>
+    <span >Argo CD,</span>
+    <span >Agentic Playwright,</span>
   </div>
 
   <div className="flex gap-[0.3em] flex-wrap">
@@ -18,9 +18,9 @@ function Navbar() {
   </div>
 
   <div className="flex gap-[0.3em] flex-wrap">
-    <span >GitOps,</span>
-    <span >Argo CD,</span>
-    <span >Agentic Playwright</span>
+    <span >Java,</span>
+    <span >Python,</span>
+    <span >JavaScript</span>
   </div>
 
 </div>
