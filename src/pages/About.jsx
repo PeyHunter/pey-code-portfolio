@@ -68,6 +68,7 @@ function About() {
               <span className="text-purple-400">Email</span> email,{" "}
               <span className="text-purple-400">Link</span> link,{" "}
               <span className="text-purple-400">Link</span> cv,{" "}
+              <span className="text-purple-400">Link</span> linkedin,{" "}
               <span className="text-purple-400">Phone</span> phone) {}
             </div>
 
@@ -99,6 +100,14 @@ function About() {
                 <span className="text-purple-400">Link</span>(
                 <a href="https://cv.peytonhunter.com" target="_blank" className="text-orange-300 hover:underline transition-all">
                   "https://cv.peytonhunter.com"
+                </a>
+                ),
+              </div>
+              <div>
+                <span className="text-blue-400">new</span>{" "}
+                <span className="text-purple-400">Link</span>(
+                <a href="https://www.linkedin.com/in/pey-hunter" target="_blank" rel="noopener noreferrer" className="text-orange-300 hover:underline transition-all">
+                  "https://www.linkedin.com/in/pey-hunter"
                 </a>
                 ),
               </div>
