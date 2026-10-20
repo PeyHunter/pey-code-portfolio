@@ -9,13 +9,48 @@ function About() {
             About
           </h1>
 
-          <p className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2">
-            Hi, I'm Peyton, a full-stack developer studying at KEA, and I'm currently looking for a job.
-            I have a solid foundation in Java, Spring Boot, and MySQL, and I enjoy using Tailwind and Bootstrap
-            to keep my frontends clean. As an AI intern at Droids Agency I work with agentic Playwright,
-            AI workflows, and Kubernetes, and I run my own k3s cluster with CI/CD. I’m ready to join a professional
-            dev team where I can contribute to real projects and keep leveling up my coding skills.
-          </p>
+          <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
+            <p>
+              Computer Science (Datamatiker) student at EK (formerly KEA), looking for job opportunities.
+              As an AI intern at Droids Agency, I’ve helped build an AI-powered OCR pipeline: I built its
+              benchmarking and scoring setup, the local K3s deploy workflow with automated smoke tests, and
+              developer tooling for model resends and synthetic test data. I also work with agentic Playwright
+              testing and AI workflows.
+            </p>
+            <p>
+              On the side, I bootstrapped my own k3s cluster from scratch, fully managed as code with Argo CD
+              (app of apps, self-managing), cert-manager for Let’s Encrypt certificates and external-dns for
+              Cloudflare. A push to GitHub builds an image and Argo CD deploys it automatically, and the cluster
+              hosts three apps over HTTPS, including my CV.
+            </p>
+            <p>
+              I also have hands-on experience with Java, Spring Boot and MySQL, plus frontend work in JavaScript
+              and React. Before coding I spent years as a graphic designer, so I care about how things look and
+              feel, not just how they work.
+            </p>
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-black tracking-tighter mb-6">
+            AI workflows
+          </h2>
+
+          <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
+            <p>
+              My own project, Pathfinder, uses the Claude API to turn a messy list of things someone wants to
+              learn into a full learning path. It runs in steps: one prompt cleans up the list (fixing typos,
+              translating Danish, splitting items) and asks the user when something is ambiguous, the next builds
+              an ordered path of modules and adds the missing basics, and a third writes a beginner lesson for
+              each concept. Every answer comes back as structured JSON checked against a schema and my own rules,
+              such as “no cycles”. If a check fails, the errors go back to the model so it repairs its own answer.
+              A spend limit and usage tracking keep the cost under control, and it runs on my k3s cluster.
+            </p>
+            <p>
+              I’ve also built automations in n8n during my AI Agents and Automation elective, such as a workflow
+              that backs up my workflows to GitHub, and Notehelper, a Spring Boot app that uses OpenAI to turn a
+              PDF into structured notes, deeper explanations and a quiz. For testing, I use Playwright’s AI test
+              agents to plan, write and fix browser tests.
+            </p>
+          </div>
 
           <a
             href="https://cv.peytonhunter.com"
