@@ -26,7 +26,7 @@ function Home() {
         <div className="font-reddit text-lg md:text-xl tracking-wide font-medium max-w-4xl mx-auto leading-relaxed normal-case inline-flex flex-col items-center">
           
           <div>
-            <span className="text-blue-400">const</span> <span className="text-yellow-200">internship</span> = {"{"}
+            <span className="text-blue-400">const</span> <span className="text-yellow-200">job</span> = {"{"}
           </div>
           
           <div className="flex flex-col items-center">

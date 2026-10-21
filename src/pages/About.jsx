@@ -52,6 +52,30 @@ function About() {
             </p>
           </div>
 
+          <h2 className="text-3xl md:text-4xl font-black tracking-tighter mb-6">
+            Thoughts on AI
+          </h2>
+
+          <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
+            <p>
+              I work with AI agents every day, mainly Claude Code and Codex, and I use skills and structured
+              workflows rather than ad-hoc prompting to keep improving how efficiently I work. I’ve also worked
+              with Hermes agents and RAG, and with skills and frameworks such as Matt Pocock’s skills and Lauren
+              Tan’s pstack.
+            </p>
+            <p>
+              I’ve learnt that understanding the spec and the domain is essential. On a Kubernetes-based OCR
+              pipeline, every task follows the same loop: spec, implement, verify and hand off. I’m also aware of
+              the cognitive debt that builds up when agents write code. To reduce it, I built a quiz skill that
+              tests me on the concepts behind the work, one question at a time, and saves study notes, so I
+              understand what my agents build.
+            </p>
+            <p>
+              The bottleneck now is trust. I’m focused on building test frameworks that let me rely on my agents
+              more and more.
+            </p>
+          </div>
+
           <a
             href="https://cv.peytonhunter.com"
             target="_blank"
@@ -114,8 +138,8 @@ function About() {
               <div>
                 <span className="text-blue-400">new</span>{" "}
                 <span className="text-purple-400">Phone</span>(
-                <a href="tel:+4512345678" className="text-orange-300 hover:underline transition-all">
-                  "+45 12 34 56 78"
+                <a href="tel:+4522113231" className="text-orange-300 hover:underline transition-all">
+                  "+45 22 11 32 31"
                 </a>
                 )
               </div>
