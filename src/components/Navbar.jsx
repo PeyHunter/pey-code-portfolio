@@ -31,7 +31,7 @@ function Navbar() {
      <div className="font-bricolage flex gap-8 text-[25px] font-medium ">
         <Link to="/" className="hover:line-through decoration-[3px] underline-offset-4">Home</Link>
         <Link to="/projects" className="hover:line-through decoration-[3px] underline-offset-4">Projects</Link>
-        <Link to="/about" className="hover:line-through decoration-[3px] underline-offset-4">About</Link>
+        <Link to="/work" className="hover:line-through decoration-[3px] underline-offset-4">Work</Link>
       </div>
     </nav>
   );

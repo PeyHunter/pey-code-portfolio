@@ -6,27 +6,30 @@ function About() {
         {/* VENSTRE SIDE: Indeholder nu både Overskrift og Tekst */}
         <div className="lg:col-span-7">
           <h1 className="text-[10vw] font-black leading-none mb-12 tracking-tighter">
-            About
+            Work
           </h1>
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              Computer Science (Datamatiker) student at EK (formerly KEA), looking for job opportunities.
-              As an AI intern at Droids Agency, I’ve helped build an AI-powered OCR pipeline: I built its
-              benchmarking and scoring setup, the local K3s deploy workflow with automated smoke tests, and
-              developer tooling for model resends and synthetic test data. I also work with agentic Playwright
-              testing and AI workflows.
+              Hi, I’m Peyton. I study Computer Science (Datamatiker) at EK (formerly KEA), and I’m looking for
+              my next job. Before I started coding, I spent years as a graphic designer. I still think like one:
+              I want things to work, but I also want them to feel right for the person using them.
             </p>
             <p>
-              On the side, I bootstrapped my own k3s cluster from scratch, fully managed as code with Argo CD
-              (app of apps, self-managing), cert-manager for Let’s Encrypt certificates and external-dns for
-              Cloudflare. A push to GitHub builds an image and Argo CD deploys it automatically, and the cluster
-              hosts three apps over HTTPS, including my CV.
+              Right now I’m an AI intern at Droids Agency. Most of my time goes into an AI-powered OCR pipeline
+              that runs on Kubernetes. I built the benchmark that tells us how good the OCR really is, the local
+              k3s setup that lets the team run the whole pipeline on their own machine, and tools for resending
+              pages to the model and making test data. I also brought agentic Playwright testing to roboref, the
+              agency’s meeting-transcription app.
             </p>
             <p>
-              I also have hands-on experience with Java, Spring Boot and MySQL, plus frontend work in JavaScript
-              and React. Before coding I spent years as a graphic designer, so I care about how things look and
-              feel, not just how they work.
+              I learn best by building things by hand. I set up my own k3s cluster from scratch, one command at
+              a time, so I’d really understand what Kubernetes does. It now runs on two machines, a VPS and an
+              old MacBook at home, joined over Tailscale. Argo CD keeps it in sync with Git, and it hosts this
+              website and my CV.
+            </p>
+            <p>
+              I’ve also worked with Java, Spring Boot and MySQL, and with JavaScript and React on the frontend.
             </p>
           </div>
 
@@ -71,8 +74,11 @@ function About() {
               understand what my agents build.
             </p>
             <p>
-              The bottleneck now is trust. I’m focused on building test frameworks that let me rely on my agents
-              more and more.
+              The bottleneck now is trust. Agents write code fast; the hard part is knowing it works. So I’m
+              building test frameworks that let me rely on my agents more and more. At Droids I set up
+              Playwright’s AI test agents on roboref: one plans the tests, one writes them, and one repairs them
+              when the app changes. I review everything before it’s committed. That way agents help check the
+              code that agents write.
             </p>
           </div>
 

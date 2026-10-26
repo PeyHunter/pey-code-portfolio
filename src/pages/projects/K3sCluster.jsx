@@ -6,6 +6,12 @@ const links = [
   { type: "YAML", name: "CI_CD", href: "https://github.com/PeyHunter/pey-code-portfolio/blob/main/.github/workflows/ci.yml", label: "github-workflows" },
 ];
 
+// The machines in the cluster, joined over Tailscale
+const nodes = [
+  { name: "k3s-1", role: "server", detail: "VPS · control plane + public traffic" },
+  { name: "k3s-2", role: "agent", detail: "old MacBook at home · worker" },
+];
+
 // Each hop a commit takes on its way to peytonhunter.com
 const pipeline = [
   { tool: "git push", detail: "pey-code-portfolio → main" },
@@ -31,7 +37,7 @@ export default function K3sCluster() {
           </div>
           <div>
             <span className="text-blue-400">String[]</span> tech = {"{"}
-            "k3s", "Argo CD", "external-dns", "cert-manager", "Cloudflare"
+            "k3s", "Tailscale", "Argo CD", "external-dns", "cert-manager", "Cloudflare"
             {"}"};
           </div>
           {links.map((link) => (
@@ -51,12 +57,18 @@ export default function K3sCluster() {
 
           <div className="mt-8 md:max-w-lg">
             <p className="text-white/60 font-reddit leading-relaxed">
-              This website runs on a single-node k3s cluster on my own VPS,
-              which I set up by hand to learn Kubernetes. Everything in the
-              cluster is described in one Git repo, and Argo CD keeps the
-              cluster in sync with it. external-dns creates the Cloudflare DNS
-              records from my Ingresses, and cert-manager gets the HTTPS
-              certificates.
+              This website runs on my own k3s cluster, which I set up by hand
+              to learn Kubernetes. It has two nodes: k3s-1, a VPS that runs the
+              control plane and takes the public traffic, and k3s-2, an old
+              MacBook at home that joins as a worker. Tailscale connects them
+              in a private, encrypted network, so they can talk across the
+              internet without opening extra ports.
+            </p>
+            <p className="mt-4 text-white/60 font-reddit leading-relaxed">
+              Everything in the cluster is described in one Git repo, and Argo
+              CD keeps the cluster in sync with it. external-dns creates the
+              Cloudflare DNS records from my Ingresses, and cert-manager gets
+              the HTTPS certificates.
             </p>
             <p className="mt-4 text-blue-400/80 font-reddit text-sm italic leading-relaxed">
               You are looking at it right now: every push to this portfolio is
@@ -93,7 +105,23 @@ export default function K3sCluster() {
               </li>
             ))}
           </ol>
-          <div className="mt-2 pt-4 border-t border-white/10 text-xs md:text-sm text-white/40 tracking-wider">
+          <div className="mt-2 pt-4 border-t border-white/10">
+            <div className="text-[10px] text-white/30 uppercase tracking-[0.2em] mb-3">nodes · tailscale</div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+              {nodes.map((node, i) => (
+                <div key={node.name} className="flex flex-col sm:flex-row sm:items-center gap-3">
+                  {i > 0 && <span className="text-white/30 text-xs tracking-wider">⇄</span>}
+                  <div className="border border-white/15 rounded-lg px-4 py-2">
+                    <div className="text-orange-300 text-sm tracking-wider">
+                      {node.name} <span className="text-white/40 text-xs">({node.role})</span>
+                    </div>
+                    <div className="text-white/50 text-xs">{node.detail}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="mt-4 pt-4 border-t border-white/10 text-xs md:text-sm text-white/40 tracking-wider">
             <span className="text-green-400/80">●</span> live at{" "}
             <span className="text-white/70">https://peytonhunter.com</span>
           </div>

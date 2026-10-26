@@ -5,6 +5,7 @@ import Soundwave from "./projects/Soundwave";
 import N8n from "./projects/N8n";
 import Notehelper from "./projects/Notehelper";
 import K3sCluster from "./projects/K3sCluster";
+import AgenticPlaywright from "./projects/AgenticPlaywright";
 
 function Projects() {
   return (
@@ -16,6 +17,8 @@ function Projects() {
       <div className="flex flex-col border-t border-white/20">
 
         <K3sCluster />
+
+        <AgenticPlaywright />
 
         <Soundwave
           displayTitle="Soundwave Arena"
