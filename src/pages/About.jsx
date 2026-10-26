@@ -6,30 +6,19 @@ function About() {
         {/* VENSTRE SIDE: Indeholder nu både Overskrift og Tekst */}
         <div className="lg:col-span-7">
           <h1 className="text-[10vw] font-black leading-none mb-12 tracking-tighter">
-            Work
+            About
           </h1>
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              Hi, I’m Peyton. I study Computer Science (Datamatiker) at EK (formerly KEA), and I’m looking for
-              my next job. Before I started coding, I spent years as a graphic designer. I still think like one:
-              I want things to work, but I also want them to feel right for the person using them.
+              Hi, I’m Peyton. I study Computer Science (Datamatiker) at EK (formerly KEA) and I’m looking for my
+              next job. I was a graphic designer before I started coding, so I care about how things feel, not
+              just how they work.
             </p>
             <p>
-              Right now I’m an AI intern at Droids Agency. Most of my time goes into an AI-powered OCR pipeline
-              that runs on Kubernetes. I built the benchmark that tells us how good the OCR really is, the local
-              k3s setup that lets the team run the whole pipeline on their own machine, and tools for resending
-              pages to the model and making test data. I also brought agentic Playwright testing to roboref, the
-              agency’s meeting-transcription app.
-            </p>
-            <p>
-              I learn best by building things by hand. I set up my own k3s cluster from scratch, one command at
-              a time, so I’d really understand what Kubernetes does. It now runs on two machines, a VPS and an
-              old MacBook at home, joined over Tailscale. Argo CD keeps it in sync with Git, and it hosts this
-              website and my CV.
-            </p>
-            <p>
-              I’ve also worked with Java, Spring Boot and MySQL, and with JavaScript and React on the frontend.
+              I’m an AI intern at Droids Agency, where I work on an AI-powered OCR pipeline on Kubernetes and
+              agentic Playwright testing. In my spare time I built my own k3s cluster by hand. It runs this
+              website. I also work with Java, Spring Boot, MySQL, JavaScript and React.
             </p>
           </div>
 
@@ -39,19 +28,10 @@ function About() {
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              My own project, Pathfinder, uses the Claude API to turn a messy list of things someone wants to
-              learn into a full learning path. It runs in steps: one prompt cleans up the list (fixing typos,
-              translating Danish, splitting items) and asks the user when something is ambiguous, the next builds
-              an ordered path of modules and adds the missing basics, and a third writes a beginner lesson for
-              each concept. Every answer comes back as structured JSON checked against a schema and my own rules,
-              such as “no cycles”. If a check fails, the errors go back to the model so it repairs its own answer.
-              A spend limit and usage tracking keep the cost under control, and it runs on my k3s cluster.
-            </p>
-            <p>
-              I’ve also built automations in n8n during my AI Agents and Automation elective, such as a workflow
-              that backs up my workflows to GitHub, and Notehelper, a Spring Boot app that uses OpenAI to turn a
-              PDF into structured notes, deeper explanations and a quiz. For testing, I use Playwright’s AI test
-              agents to plan, write and fix browser tests.
+              My project Pathfinder uses the Claude API to turn a messy list of things someone wants to learn into
+              a learning path, with lessons for each concept. Every answer is checked against a schema, and if a
+              check fails, the model repairs its own answer. I’ve also built n8n automations and Notehelper, a
+              Spring Boot app that uses OpenAI to turn a PDF into notes and a quiz.
             </p>
           </div>
 
@@ -61,24 +41,14 @@ function About() {
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              I work with AI agents every day, mainly Claude Code and Codex, and I use skills and structured
-              workflows rather than ad-hoc prompting to keep improving how efficiently I work. I’ve also worked
-              with Hermes agents and RAG, and with skills and frameworks such as Matt Pocock’s skills and Lauren
-              Tan’s pstack.
+              I work with AI agents every day, mainly Claude Code and Codex, using skills and structured workflows
+              instead of ad-hoc prompts. Every task follows the same loop: spec, implement, verify, hand off. To
+              make sure I understand what my agents build, I made a quiz skill that tests me on the concepts
+              behind the work.
             </p>
             <p>
-              I’ve learnt that understanding the spec and the domain is essential. On a Kubernetes-based OCR
-              pipeline, every task follows the same loop: spec, implement, verify and hand off. I’m also aware of
-              the cognitive debt that builds up when agents write code. To reduce it, I built a quiz skill that
-              tests me on the concepts behind the work, one question at a time, and saves study notes, so I
-              understand what my agents build.
-            </p>
-            <p>
-              The bottleneck now is trust. Agents write code fast; the hard part is knowing it works. So I’m
-              building test frameworks that let me rely on my agents more and more. At Droids I set up
-              Playwright’s AI test agents on roboref: one plans the tests, one writes them, and one repairs them
-              when the app changes. I review everything before it’s committed. That way agents help check the
-              code that agents write.
+              The bottleneck now is trust. Agents write code fast; the hard part is knowing it works. That’s why
+              I focus on tests, like the Playwright agents I set up at Droids.
             </p>
           </div>
 

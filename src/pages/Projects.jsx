@@ -5,18 +5,21 @@ import Soundwave from "./projects/Soundwave";
 import N8n from "./projects/N8n";
 import Notehelper from "./projects/Notehelper";
 import K3sCluster from "./projects/K3sCluster";
+import Kaos from "./projects/Kaos";
 import AgenticPlaywright from "./projects/AgenticPlaywright";
 
 function Projects() {
   return (
     <div className="min-h-screen bg-black text-white p-8 pt-40 font-bricolage">
       <h1 className="text-[10vw] font-black leading-none mb-20 tracking-tighter">
-        Projects
+        Work
       </h1>
 
       <div className="flex flex-col border-t border-white/20">
 
         <K3sCluster />
+
+        <Kaos />
 
         <AgenticPlaywright />
 
