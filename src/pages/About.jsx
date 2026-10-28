@@ -11,15 +11,14 @@ function About() {
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              Hi, I’m Peyton. I study Computer Science (Datamatiker) at EK (formerly KEA), and I’m looking for my
-              next job. Right now I’m an AI intern at Droids Agency, where I work on an AI-powered OCR pipeline
-              that runs on Kubernetes and set up agentic Playwright testing.
+              Hi, I’m Peyton. I study Computer Science (Datamatiker) at EK and I’m looking for my next job. I’ve
+              fallen for Linux, Kubernetes and GitOps: I built my own k3s cluster by hand, and Argo CD deploys this
+              website straight from git. I’m also an AI intern at Droids Agency, where I work with Kubernetes and
+              agentic testing.
             </p>
             <p>
-              Kubernetes is the thing I can’t stop tinkering with. In my spare time I built my own k3s cluster by
-              hand, and it’s what serves this website. Day to day I also work with Java, Spring Boot, MySQL,
-              JavaScript and React. Before all of this I was a graphic designer, and I think that’s why I still
-              care about how things feel, not just how they work.
+              I also work with Java, Spring Boot, MySQL, JavaScript and React. Before coding I was a graphic
+              designer, so I still care about how things feel, not just how they work.
             </p>
           </div>
 
@@ -29,23 +28,13 @@ function About() {
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              Most of my days are spent working alongside AI agents, mainly Claude Code and Codex. Over time I’ve
-              drifted away from ad-hoc prompting and towards skills and structured workflows, partly because
-              they’re faster, but mostly because they make the work repeatable. I’ve also tried Hermes agents and
-              RAG, and I keep borrowing ideas from other people’s setups, like Matt Pocock’s skills and Lauren
-              Tan’s pstack.
+              I work with AI agents every day, and I’ve found that skills and structured workflows beat ad-hoc
+              prompting. What I think about most is cognitive debt: when an agent writes the code, it’s easy to end
+              up with something that works but that you don’t really understand. So I built a quiz skill that asks
+              me about the concepts behind the work.
             </p>
             <p>
-              The thing I think about most is cognitive debt. When an agent writes the code, it’s easy to end up
-              with something that works but that you don’t really understand. So I’ve come to believe the spec and
-              the domain matter more than ever. On the OCR pipeline every task follows the same loop: spec,
-              implement, verify, hand off. And to keep myself honest, I built a quiz skill that asks me about the
-              concepts behind the work, one question at a time, and saves notes I can study later.
-            </p>
-            <p>
-              I suspect the real bottleneck isn’t speed anymore, it’s trust. Agents can write code fast; knowing
-              it actually works is the hard part. That’s why I keep coming back to tests, and why I’m spending
-              more of my time on test frameworks that let me rely on my agents a little more each time.
+              I suspect the real bottleneck isn’t speed anymore, it’s trust. That’s why I keep coming back to tests.
             </p>
           </div>
 
