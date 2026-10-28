@@ -11,44 +11,41 @@ function About() {
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              Hi, I’m Peyton. I study Computer Science (Datamatiker) at EK (formerly KEA) and I’m looking for my
-              next job. I was a graphic designer before I started coding, so I care about how things feel, not
-              just how they work.
+              Hi, I’m Peyton. I study Computer Science (Datamatiker) at EK (formerly KEA), and I’m looking for my
+              next job. Right now I’m an AI intern at Droids Agency, where I work on an AI-powered OCR pipeline
+              that runs on Kubernetes and set up agentic Playwright testing.
             </p>
             <p>
-              I’m an AI intern at Droids Agency, where I work on an AI-powered OCR pipeline on Kubernetes and
-              agentic Playwright testing. In my spare time I built my own k3s cluster by hand. It runs this
-              website. I also work with Java, Spring Boot, MySQL, JavaScript and React.
-            </p>
-          </div>
-
-          <h2 className="text-3xl md:text-4xl font-black tracking-tighter mb-6">
-            AI workflows
-          </h2>
-
-          <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
-            <p>
-              My project Pathfinder uses the Claude API to turn a messy list of things someone wants to learn into
-              a learning path, with lessons for each concept. Every answer is checked against a schema, and if a
-              check fails, the model repairs its own answer. I’ve also built n8n automations and Notehelper, a
-              Spring Boot app that uses OpenAI to turn a PDF into notes and a quiz.
+              Kubernetes is the thing I can’t stop tinkering with. In my spare time I built my own k3s cluster by
+              hand, and it’s what serves this website. Day to day I also work with Java, Spring Boot, MySQL,
+              JavaScript and React. Before all of this I was a graphic designer, and I think that’s why I still
+              care about how things feel, not just how they work.
             </p>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-black tracking-tighter mb-6">
-            Thoughts on AI
+            Some thoughts on AI
           </h2>
 
           <div className="font-reddit text-base md:text-base leading-relaxed mb-10 opacity-70 max-w-1/2 space-y-4">
             <p>
-              I work with AI agents every day, mainly Claude Code and Codex, using skills and structured workflows
-              instead of ad-hoc prompts. Every task follows the same loop: spec, implement, verify, hand off. To
-              make sure I understand what my agents build, I made a quiz skill that tests me on the concepts
-              behind the work.
+              Most of my days are spent working alongside AI agents, mainly Claude Code and Codex. Over time I’ve
+              drifted away from ad-hoc prompting and towards skills and structured workflows, partly because
+              they’re faster, but mostly because they make the work repeatable. I’ve also tried Hermes agents and
+              RAG, and I keep borrowing ideas from other people’s setups, like Matt Pocock’s skills and Lauren
+              Tan’s pstack.
             </p>
             <p>
-              The bottleneck now is trust. Agents write code fast; the hard part is knowing it works. That’s why
-              I focus on tests, like the Playwright agents I set up at Droids.
+              The thing I think about most is cognitive debt. When an agent writes the code, it’s easy to end up
+              with something that works but that you don’t really understand. So I’ve come to believe the spec and
+              the domain matter more than ever. On the OCR pipeline every task follows the same loop: spec,
+              implement, verify, hand off. And to keep myself honest, I built a quiz skill that asks me about the
+              concepts behind the work, one question at a time, and saves notes I can study later.
+            </p>
+            <p>
+              I suspect the real bottleneck isn’t speed anymore, it’s trust. Agents can write code fast; knowing
+              it actually works is the hard part. That’s why I keep coming back to tests, and why I’m spending
+              more of my time on test frameworks that let me rely on my agents a little more each time.
             </p>
           </div>
 
